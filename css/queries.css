@@ -256,6 +256,7 @@
 
   .plan {
     justify-self: center;
+    width: 70%;
   }
 
   .btn:link,
