@@ -1,0 +1,359 @@
+/*LAPTOPS 1440PX*/
+@media (max-width: 88em) {
+  .hero-content {
+    max-width: 120rem;
+  }
+
+  .main-header {
+    padding: 0 0.9rem;
+    gap: 3rem;
+    padding: 0 3.2rem;
+  }
+
+  .nav-list {
+    gap: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    height: 2.2rem;
+  }
+
+  .header-btn:link,
+  .header-btn:visited {
+    font-size: 3rem;
+    padding: 1.6rem 3.2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 7px;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .heading-teritary {
+    font-size: 2.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 2.4rem 3.2rem;
+  }
+
+  .section-pricing {
+    padding: 3.2rem;
+  }
+
+  .testimonial-container {
+    padding: 6.4rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .grid {
+    row-gap: 6.4rem;
+  } */
+}
+
+/*TABLETS 1200PX*/
+@media (max-width: 75em) {
+  /* 9/16 */
+  html {
+    font-size: 56.25%;
+  }
+
+  .logo {
+    height: 3.2rem;
+  }
+
+  .main-header {
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /*Πίσω από το στοιχείο αν έχει blur*/
+    backdrop-filter: blur(10px);
+    /*Για το safari webkit prefix*/
+    -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    z-index: 100;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    font-size: 3.2rem;
+    gap: 5.2rem;
+    font-weight: 500;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 120;
+  }
+
+  /*Θα το βλέπεις μόνο αν βάλεις nav-open στο header*/
+  .nav-open .main-nav {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .header-btn:link,
+  .header-btn:visited {
+    padding: 2.4rem 3.4rem;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .line {
+    display: none;
+  }
+
+  /*Attribute selector το name είναι attribute*/
+  .nav-open .menu-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .menu-icon[name="grid-outline"] {
+    display: none;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box {
+    text-align: center;
+    /* margin-bottom: 4.8rem; */
+    padding: 4.8rem;
+  }
+
+  .hero-text {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-img-box {
+    text-align: center;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .logos img {
+    height: 4rem;
+  }
+
+  /*Για να φέρεις το regular στο κέντρο θα αυξήσεις τις στήλες αλλιώς θα σου φαίνεται χόντρο την θέση 2/4 πιάνει το regular και τις 2 άλλες στήλες το free και το business*/
+  .plan-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .addresss-col {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+
+  .cta-text-box .heading-secondary {
+    /*Μόνο για το h2 του pricing-container*/
+    margin-bottom: 4.8rem;
+  }
+
+  .btn-form {
+    padding: 1.8rem;
+    margin-top: 1.8;
+  }
+
+  .plan-free,
+  .plan-business {
+    grid-column: span 2;
+  }
+
+  .plan-regular {
+    justify-self: center;
+    grid-column: 2/4;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 20rem;
+    grid-row: 1;
+  }
+
+  .plan {
+    width: 80%;
+  }
+}
+
+/*Tablet potrait 944px*/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .list-item {
+    font-size: 2.4rem;
+  }
+}
+
+/*Tablets Below 760px*/
+@media (max-width: 48em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    margin-bottom: 3.2rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img {
+    width: 100%;
+  }
+
+  .time-line-item:last-child .line-time {
+    top: 0;
+    height: 100%;
+  }
+
+  .time-line-item {
+    grid-template-columns: 1fr;
+  }
+
+  .step-num,
+  .line-time {
+    display: none;
+  }
+
+  .step-img {
+    width: 75%;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    gap: 5.2rem;
+  }
+
+  .logos-img {
+    height: 3.2rem;
+  }
+
+  /*Βρίσκει το πρώτο element με class step-text-box και το πάει στην 3η σειρά του grid*/
+  .step-text-box:nth-child(1) {
+    grid-row: 3;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem;
+  }
+
+  .cloud-table th,
+  .cloud-table td {
+    font-size: 1.6rem;
+  }
+  .table-container {
+    margin: 0 auto;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 3.4rem;
+    font-size: 2.4rem;
+    width: 80%;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-free,
+  .plan-business {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+
+  .plan-regular {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+}
+
+/*Screens below 600px*/
+
+@media (max-width: 38em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .plan {
+    width: 90%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 90%;
+  }
+}
