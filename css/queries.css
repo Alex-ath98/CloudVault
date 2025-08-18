@@ -130,7 +130,6 @@
   .header-btn:link,
   .header-btn:visited {
     padding: 2rem 3.2rem;
-    width: 20%;
     text-align: center;
   }
 
@@ -247,7 +246,6 @@
 
   .plan-grid {
     grid-template-columns: 1fr;
-    row-gap: 4.8rem;
   }
 
   .plan-regular {
@@ -256,13 +254,20 @@
 
   .plan {
     justify-self: center;
-    width: 70%;
+  }
+
+  .plan:not(:last-child) {
+    margin-bottom: 5.2rem;
   }
 
   .btn:link,
   .btn:visited {
     width: 90%;
     padding: 3.2rem;
+  }
+
+  .list-item {
+    font-size: 2.4rem;
   }
 
   .btn--cta:link,
