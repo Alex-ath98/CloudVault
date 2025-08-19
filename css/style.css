@@ -533,7 +533,7 @@
 /*Section-cta*/
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem 0;
   background-image: linear-gradient(
       to bottom right,
       rgba(68, 68, 68, 0.8),
@@ -637,7 +637,7 @@
 /*Πρέπει να βάλεις το padding-top στο footer αλλιώς δεν δουλεύει το padding 0 3.2rem στο container*/
 
 .footer {
-  padding: 9.6rem 0rem;
+  padding: 12.8rem 0rem;
 }
 
 .main-footer {
